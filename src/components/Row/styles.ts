@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const Tr = styled.tr`
+    cursor: pointer;
     
+    &:hover{
+        filter:opacity(0.9);
+    }
 `;
 
 export const Title = styled.td`
