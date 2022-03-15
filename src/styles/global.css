@@ -1,0 +1,25 @@
+:root{
+  --gray-900: #181B23;
+  --gray-700:#353646;
+  --gray-600: #4B4D63;
+  --gray-200: #B3B5C6;
+  --gray-50: #EEEEF2;
+
+  --gray-alpha-100: rgba(255, 255, 255, 0.06);
+
+  --pink-500:#D53F8C;
+
+  --purple-400: #9F7AEA;
+
+}
+
+
+
+body {
+  margin: 0;
+  font-family:'Roboto';
+  background-color: var(--gray-900) ;
+  color: var(--gray-50)
+}
+
+
