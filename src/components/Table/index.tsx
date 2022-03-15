@@ -14,8 +14,6 @@ interface Props {
 const Table: React.FC<Props> = ({ data }) => {
   const [page, setPage] = useState(1);
 
-  // console.log('(page * 10) - 10 <= index', ((2 * 10) - 10) <= 3)
-
   return (
 
             <>

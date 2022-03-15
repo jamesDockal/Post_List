@@ -13,7 +13,7 @@ const Row: React.FC<Props> = ({ post }) => {
   const navigation = useNavigate()
 
   function navigate (): void {
-    navigation(`/posts/${post.id}`)
+    navigation(`/post/${post.id}`)
   }
 
   return (
