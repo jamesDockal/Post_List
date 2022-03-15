@@ -14,7 +14,7 @@ const styles = {
   control: (css: any) => ({
     ...css,
     transition: '0.1s',
-    color: 'white',
+    // color: 'white',
     backgroundColor: 'var(--gray-900)',
     borderTopRightRadius: 16,
     borderBottomRightRadius: 16,
@@ -35,12 +35,12 @@ const styles = {
 
   singleValue: (css: any) => ({
     ...css,
-    color: '#ED64A6'
+    color: 'var(--gray-50)'
   }),
 
   option: (css: any) => ({
     ...css,
-    color: '#B83280',
+    color: 'var(--gray-200)',
     fontWeight: '500',
     backgroundColor: 'var(--gray-900)',
     cursor: 'pointer',
