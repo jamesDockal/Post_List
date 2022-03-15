@@ -5,11 +5,10 @@ import Routes from './routes';
 
 const App: React.FC = () => {
   return (
-<BrowserRouter>
-          <Routes />
-        </BrowserRouter>
-
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

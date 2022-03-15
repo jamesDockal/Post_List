@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useField } from '@unform/core';
 
 import SelectData from 'react-select';
+
 import { Container } from './styles';
 
 interface Option {
@@ -14,13 +15,11 @@ const styles = {
   control: (css: any) => ({
     ...css,
     transition: '0.1s',
-    // color: 'white',
     backgroundColor: 'var(--gray-900)',
     borderTopRightRadius: 16,
     borderBottomRightRadius: 16,
     border: '2px solid var(--purple-400)',
     cursor: 'pointer'
-
   }),
 
   dropdownIndicator: (css: any) => ({
@@ -54,8 +53,7 @@ const styles = {
     marginTop: 0,
     backgroundColor: 'var(--gray-900)'
   })
-
-}
+};
 
 interface Props {
   name: string
@@ -63,14 +61,10 @@ interface Props {
   onChange?: (value: string | number | undefined) => void
 }
 
-const Select: React.FC<Props> = ({
-  name,
-  options,
-  onChange
-}) => {
+const Select: React.FC<Props> = ({ name, options, onChange }) => {
   const selectRef = useRef<any>(null);
 
-  const [value, setValue] = useState('')
+  const [value, setValue] = useState('');
 
   const { fieldName, registerField } = useField(name);
   useEffect(() => {
@@ -89,14 +83,14 @@ const Select: React.FC<Props> = ({
 
   return (
     <Container>
-        <SelectData
-            name={name}
-            options={options}
-            styles={styles}
-            onChange={(option) => onChange?.(option?.value)}
-        />
+      <SelectData
+        name={name}
+        options={options}
+        styles={styles}
+        onChange={(option) => onChange?.(option?.value)}
+      />
     </Container>
-  )
+  );
 };
 
 export default Select;

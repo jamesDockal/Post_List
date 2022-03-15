@@ -6,38 +6,37 @@ export const Container = styled.div`
   height: 100vh;
 
   display: flex;
-  align-items:center;
-  justify-content:center;
-
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Content = styled.div`
-   background-color:#1F2029;
-    width: 80%;
-    max-width: 1080px;
-    min-height: 900px;
+  background-color: #1f2029;
+  width: 80%;
+  max-width: 1080px;
+  min-height: 900px;
 
-    padding: 16px;
-    border-radius: 16px;
+  padding: 16px;
+  border-radius: 16px;
 `;
 
 export const Title = styled.div`
-    font-size: 20px;
-    color: #EEEEF2;
-`
+  font-size: 20px;
+  color: #eeeef2;
+`;
 
 export const FormContent = styled(Form)`
-    margin-bottom:48px;
-`
+  margin-bottom: 48px;
+`;
 
 export const SelectContainer = styled.div`
-    width: 50%;
-    margin-top:32px;
-`
+  width: 50%;
+  margin-top: 32px;
+`;
 
 export const LoadingContaier = styled.div`
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;

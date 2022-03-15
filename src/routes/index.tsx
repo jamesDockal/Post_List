@@ -10,7 +10,6 @@ const Routes: React.FC = () => {
     <BrowserRoutes>
       <Route path="/" element={<Home />} />
       <Route path="/post/:id" element={<Post />} />
-
     </BrowserRoutes>
   );
 };
