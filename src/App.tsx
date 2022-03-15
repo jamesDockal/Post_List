@@ -1,10 +1,12 @@
 import React from 'react';
 
-function App() {
+import Home from './pages/Home';
+
+const App: React.FC = ({}) => {
   return (
-    <div>
-     getting started
-    </div>
+    <>
+      <Home />
+    </>
   );
 }
 

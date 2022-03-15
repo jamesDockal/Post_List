@@ -10,11 +10,6 @@ interface Option {
   value: string | number
 }
 
-interface Props {
-  name: string
-  options: Option[]
-}
-
 const styles = {
   control: (css: any) => ({
     ...css,
@@ -62,9 +57,16 @@ const styles = {
 
 }
 
+interface Props {
+  name: string
+  options: Option[]
+  onChange?: (value: string | number | undefined) => void
+}
+
 const Select: React.FC<Props> = ({
   name,
-  options
+  options,
+  onChange
 }) => {
   const selectRef = useRef<any>(null);
 
@@ -91,6 +93,7 @@ const Select: React.FC<Props> = ({
             name={name}
             options={options}
             styles={styles}
+            onChange={(option) => onChange?.(option?.value)}
         />
     </Container>
   )
